@@ -1,0 +1,54 @@
+/* new contant */
+#new_bg > img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 960px;
+}
+
+
+#books_location {
+    background: white;
+    /* height: 100vh; */
+    background-color:darkolivegreen;
+}
+
+#books_location h1 {
+    text-align: center;
+    font-size: 4em;
+    margin-top: 60px;
+}
+
+#newbooks {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.location {
+    display: inline-block;
+    margin: -2.9px;
+    text-align: center;
+    margin-left: 0px;
+    padding: 40px;
+    box-sizing: border-box;
+    /* border: 1px black solid; */
+}
+
+@media screen and (max-width:767px) {
+    .location {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .location {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .location {
+        width: 30%;
+        
+    }
+}

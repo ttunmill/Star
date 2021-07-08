@@ -10,6 +10,9 @@ a { text-decoration: none !important; }
 img { border: 0; }
 ul { list-style: none; }
 
+
+
+
 /* 헤더 */
 #main_header {
     position: fixed;
@@ -36,49 +39,99 @@ ul { list-style: none; }
     margin: 5px 10px;
 }
 
-#main_header #gnb_nav {
+#main_header {
     float: left;
     overflow: hidden;
 }
 
-#main_header #gnb_nav > li {
+#main_header li {
     float: left;
     padding: 22px 50px;
     box-sizing: border-box;
     margin-left: 30px;
 }
 
-#main_header #gnb_nav > li:hover {
+#main_header li:hover {
     background-color: #321C52;
 }
 
-#main_header #trigger {
+#main_header .menu_btn {
     float: right;
-    text-align: right;
-    padding: 22px 17px;
+}
+
+#main_header .close_btn {
+    float: right;
+}
+
+/* 네비게이션 */
+
+@media screen and (max-width:774px){
+
+#menu_wrap {
     display: none;
 }
 
-@media screen and (max-width:736px) {
-    #gnb_nav {
-        display: none;
-    }
+.menu_btn {
+    width : 50px; 
+    height : 50px;
+    position : absolute; 
+    right : 0px; 
+    top : 0px; 
+    z-index : 1; 
+    background-image : url("https://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/menu.png"); 
+    background-size : 50%; 
+    background-repeat : no-repeat; 
+    background-position : center; 
+    cursor : pointer;
+}
 
-    #main_header #trigger {
-        display: block;
-    }
+.close_btn {
+    width : 50px; 
+    height : 50px; 
+    position : absolute; 
+    right : 0px; 
+    top : 0px; 
+    z-index : 1; 
+    background-image : url("https://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png"); 
+    background-size : 50%; 
+    background-repeat : no-repeat; 
+    background-position : center; 
+    cursor : pointer;
+}
 
-    #bg_img > .cover {
-        
+.sidebar_menu {
+    width: 150px; 
+    height: 100%; 
+    position: fixed; 
+    top: 0px; 
+    right: -152px; 
+    z-index: 10; 
+    border: 1px solid #c9c9c9; 
+    background-color: white; 
+    text-align: center; 
+    transition: All 0.2s ease; 
+    -webkit-transition: All 0.2s ease; 
+    -moz-transition: All 0.2s ease; 
+    -o-transition: All 0.2s ease;
+}
+
+#menu_wrap {
+    right : 0px;
     }
 }
 
+
+
+
+
 /* 푸터 */
 #main_footer {
-    height: 100px;
+    bottom: 0;
+    width: 100%;
     background-color: #211A1D;
     color: #CAD5CA;
     overflow: hidden;
+    /* position: absolute; */
 }
 
 #email {
@@ -94,4 +147,10 @@ ul { list-style: none; }
 
 #footer_img > a {
     padding: 50px;
+}
+
+@media screen and (max-width:767px) {
+    #footer_img {
+        display: none;
+    }
 }

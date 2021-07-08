@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epic Books</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/new.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../library/fontawesome-free-5.15.3-web/css/all.css">
 </head>
@@ -13,27 +13,76 @@
     <!-- 헤더&네브 -->
     <header id="main_header">
         <div id="gnb_container">
-            <div class="gnb menu">
                 <div id="logo">
                     <a href="#"><img src="https://via.placeholder.com/120x50" alt="logo"></a>
                 </div>
-                <ul id="gnb_nav">
-                    <li><a href="#">NEW</a></li>
-                    <li><a href="#">RECOMMEND</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-                <div id="trigger">
-                    <a href="#" class="mobile hamburger"><i class="fas fa-align-justify"></i></a>
-                    <a href="#" class="mobile close"><i class="fas fa-times"></i></a>
+                <div class="menu_bg">
+                    <div class="menu_btn">
+                        <a href="#">
+                            <!-- <i class="fas fa-bars"></i> -->
+                        </a>
+                    </div>
+                    <div class="sidebar_menu">
+                        <div class="close_btn">
+                            <a href="#">
+                                <!-- <i class="fas fa-times"></i> -->
+                            </a>
+                        </div>
+                    </div>
+                    <ul id="menu_wrap">
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">RECOMMEND</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
-    
     <!-- 콘텐츠 -->
-    <div>
-        <img src="" alt="">
+    <div id="new_bg">
+        <img src="../img/contant/flower-4865379_1920.png" alt="">
     </div>
+    <div id="new_phrase">
+        NEW
+    </div>
+
+    <!-- 책 6권 -->
+    <article id="books_location">
+        <h1>신간도서</h1>
+        <div id="newbooks">
+            <a href="#" class="location">
+                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                <span class="book_title">책제목1<span><br />
+                <span class="writer">글쓴이</span>
+            </a>
+            <a href="#" class="location">
+                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                <span class="book_title">책제목2<span><br />
+                <span class="writer">글쓴이</span>
+            </a>
+            <a href="#" class="location">
+                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                <span class="book_title">책제목3<span><br />
+                <span class="writer">글쓴이</span>
+            </a>
+            <a href="#" class="location">
+                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                <span class="book_title">책제목4<span><br />
+                <span class="writer">글쓴이</span>
+            </a>
+            <a href="#" class="location">
+                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                <span class="book_title">책제목5<span><br />
+                <span class="writer">글쓴이</span>
+            </a>
+            <a href="#" class="location">
+                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                <span class="book_title">책제목6<span><br />
+                <span class="writer">글쓴이</span>
+            </a>
+        </div>
+    </article>
+
 
 
 
@@ -76,6 +125,6 @@
     <!-- jQ -->
     <script src="../js/jquery-3.6.0.js"></script>
     <script src="../js/common.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/new.js"></script>
 </body>
 </html>
