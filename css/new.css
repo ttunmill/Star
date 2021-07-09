@@ -1,43 +1,75 @@
 /* new contant */
-#new_bg > img{
-    background-size: cover;
-    background-repeat: no-repeat;
+#new_bg > img {
+    position: relative;
+    background-size: contain;
     height: 100vh;
-    width: 960px;
+    width: 100vw;
 }
 
+#new_phrase {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: (-50%, -50%);
+    color: white;
+    text-align: left;
+}
+
+#new_phrase h1 {
+    font-size: 5em;
+}
+
+#new_phrase > .bar {
+    background-color: white;
+    height: 2px;
+    margin-left: 5px;
+    width: 140px;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+}
 
 #books_location {
-    background: white;
     /* height: 100vh; */
-    background-color:darkolivegreen;
+    background-color: wheat;
 }
 
 #books_location h1 {
     text-align: center;
     font-size: 4em;
-    margin-top: 60px;
+    padding-top: 70px;
 }
 
 #newbooks {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .location {
     display: inline-block;
     margin: -2.9px;
     text-align: center;
-    margin-left: 0px;
     padding: 40px;
     box-sizing: border-box;
+    color: white;
     /* border: 1px black solid; */
 }
+
 
 @media screen and (max-width:767px) {
     .location {
         width: 100%;
+        overflow: hidden;
     }
+
+    .location > #img_books {
+        float: left;
+    }
+
+    .location > .book_title, .writer {
+        float:initial;
+        padding-top: 20px;
+    }
+    
 }
 
 @media screen and (min-width:768px) and (max-width:1024px){
