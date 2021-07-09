@@ -127,7 +127,7 @@ ul { list-style: none; }
 /* 푸터 */
 #main_footer {
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #211A1D;
     color: #CAD5CA;
     overflow: hidden;

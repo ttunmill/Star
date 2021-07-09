@@ -1,10 +1,24 @@
 /* new contant */
-#new_bg > img {
+#new_bg {
     position: relative;
-    background-size: contain;
-    height: 100vh;
+    background: url("../img/contant/new_books.jpg");
+    background-size: cover;
     width: 100vw;
+    height: 100vh;
 }
+
+#new_bg::before {
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: #000;
+}
+
+
 
 #new_phrase {
     position: absolute;
@@ -29,7 +43,7 @@
 }
 
 #books_location {
-    /* height: 100vh; */
+    width: 100vw;
     background-color: wheat;
 }
 
