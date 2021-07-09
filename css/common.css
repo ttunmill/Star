@@ -53,6 +53,7 @@ ul { list-style: none; }
 
 #main_header li:hover {
     background-color: #321C52;
+    cursor: pointer;
 }
 
 #main_header .menu_btn {
