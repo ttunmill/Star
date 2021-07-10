@@ -17,7 +17,8 @@ ul { list-style: none; }
 #main_header {
     position: fixed;
     width: 100%;
-    background: #211A1D;
+    background: #303942; 
+    /* #211A1D; */
     height: 60px;
     z-index: 1;
     border-bottom: 1px solid black;
@@ -36,7 +37,13 @@ ul { list-style: none; }
 #main_header #logo {
     float: left;
     width: 150px;
-    margin: 5px 10px;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+#logo img {
+    width: 150px;
+    height: 60px;
 }
 
 #main_header {
@@ -44,9 +51,10 @@ ul { list-style: none; }
     overflow: hidden;
 }
 
+
 #main_header li {
     float: left;
-    padding: 22px 50px;
+    padding: 22px 60px;
     box-sizing: border-box;
     margin-left: 30px;
 }
@@ -63,6 +71,9 @@ ul { list-style: none; }
 #main_header .close_btn {
     float: right;
 }
+
+
+
 
 /* 네비게이션 */
 
@@ -129,7 +140,8 @@ ul { list-style: none; }
 #main_footer {
     bottom: 0;
     width: 100vw;
-    background-color: #211A1D;
+    background-color: #303942;
+    /* #211A1D; */
     color: #CAD5CA;
     overflow: hidden;
     /* position: absolute; */

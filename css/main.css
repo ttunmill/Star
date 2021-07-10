@@ -16,6 +16,12 @@
         background-color: #000;
 }
 
+#logo img {
+    width: 120px;
+    height: 50px;
+}
+
+
 .main_phrase {
     position: absolute;
     top: 40%;
