@@ -2,4 +2,68 @@
 
 .box {
     padding-top: 60px;
+    height: 2000px;
+    background-color:darkkhaki;
+}
+
+#main_contact {
+    height: 200px;
+}
+
+#main_contact h1 {
+    color: grey;
+    font-size: 5em;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+#main_contact p {
+    margin-left: 50px;
+    font-size: 1.5em;
+}
+
+
+/* 이미지들 */
+#contact_wrap {
+    margin: 50px 0 0 0;
+    padding: 50px 0 50px 0;
+    height: 80%;
+    overflow: hidden;
+    background-color: grey;
+}
+
+.contact_img {
+    padding-top: 50px;
+}
+.contact_img:nth-of-type(even) {
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.contact_img:nth-of-type(odd) {
+    float: right;
+    margin-right: 100px;
+    /* padding-top: 500px; */
+}
+
+/* 반응형 */
+@media screen and (max-width:767px){
+    .contact_wrap {
+        
+    }
+    .contact_img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:1023px) {
+    
+    
+}
+
+@media screen and (min-width:1024px) {
+    .contact_img > div{
+        /* display: none; */
+    }
 }
