@@ -11,7 +11,7 @@ html,body{ margin:0; padding:0; width:100%; height:100%;}
 }
 
 #red_bg::before {
-    content: "";
+        content: "";
         opacity: 0.5;
         position: absolute;
         top: 0px;
@@ -30,19 +30,46 @@ html,body{ margin:0; padding:0; width:100%; height:100%;}
     text-align: left;
 }
 
-#red_phrase h1 {
+/* 맨위 콘텐츠 */
+
+#red_phrase {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: (-50%, -50%);
+    color: white;
+    text-align: left;
+}
+
+#red_phrase span {
     font-size: 5em;
 }
 
-#red_phrase > .bar {
-    background-color: white;
-    height: 2px;
-    margin-left: 5px;
-    width: 425px;
-    transition-duration: 1s;
-    transition-delay: 0.5s;
+@keyframes bar {
+    0% { width: 0; }
+    100% { width: 100%; }
 }
 
+.bar {
+    position: relative;
+}
+
+.bar::after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+    animation-name: bar;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+/* 콘텐츠(책들) */
 #books_location {
     /* height: 100vh; */
     background-color: wheat;

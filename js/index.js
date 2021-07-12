@@ -1,17 +1,27 @@
-// var now_img;
-// var last_img;
+$(document).ready(function() {
+    var $banner = $(".bg_img").find("ul");
 
-// window.onload = function() {
-//     setInterval("fn_change(), 3000");
-// }
+    var $bannerWidth = $banner.children().outerWidth();//이미지의 폭
+    var $bannerHeight = $banner.children().outerHeight(); // 높이
+    var $length = $banner.children().length;//이미지의 갯수
+    var rollingId;
 
-// function fn_change() {
-//     now_img = $("img").eq(0);
-//     last_img = $("img").eq(-1);
+    //정해진 초마다 함수 실행
+    rollingId = setInterval(function() { rollingStart(); }, 1000);//다음 이미지로 롤링 애니메이션 할 시간차
 
-//     last_img.addClass("img_1").css("opacity", 0).animate({"opacity":1},1000 ,function() {
-//         $(".bg_img").prepend(last_img);
-//         now_img.removeClass("img_1");
-//     });
-// }
-
+    function rollingStart() {
+        $banner.css("width", $bannerWidth * $length + "px");
+        $banner.css("height", $bannerHeight + "px");
+        //alert(bannerHeight);
+        //배너의 좌측 위치를 옮겨 준다.
+        $banner.animate({left: - $bannerWidth + "px"}, 8000, function() { //숫자는 롤링 진행되는 시간이다.
+            //첫번째 이미지를 마지막 끝에 복사(이동이 아니라 복사)해서 추가한다.
+            $(this).append("<li>" + $(this).find("li:first").html() + "</li>");
+            //뒤로 복사된 첫번재 이미지는 필요 없으니 삭제한다.
+            $(this).find("li:first").remove();
+            //다음 움직임을 위해서 배너 좌측의 위치값을 초기화 한다.
+            $(this).css("left", 0);
+            //이 과정을 반복하면서 계속 롤링하는 배너를 만들 수 있다.
+        });
+    }
+}); 

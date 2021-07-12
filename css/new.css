@@ -18,7 +18,7 @@
         background-color: #000;
 }
 
-
+/* 맨위 콘텐츠 */
 
 #new_phrase {
     position: absolute;
@@ -29,19 +29,37 @@
     text-align: left;
 }
 
-#new_phrase h1 {
+#new_phrase span {
     font-size: 5em;
 }
 
-#new_phrase > .bar {
-    background-color: white;
-    height: 2px;
-    margin-left: 5px;
-    width: 140px;
-    transition-duration: 1s;
-    transition-delay: 0.5s;
+@keyframes bar {
+    0% { width: 0; }
+    100% { width: 100%; }
 }
 
+.bar {
+    position: relative;
+}
+
+.bar::after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+    animation-name: bar;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+
+
+/* 콘텐츠(책들) */
 #books_location {
     width: 100vw;
     background-color: wheat;
