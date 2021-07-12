@@ -84,10 +84,10 @@ ul { list-style: none; }
 }
 
 .menu_btn {
-    width : 50px; 
-    height : 50px;
+    width : 60px; 
+    height : 60px;
     position : absolute; 
-    right : 0px; 
+    right : 10px; 
     top : 0px; 
     z-index : 1; 
     background-image : url("https://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/menu.png"); 
