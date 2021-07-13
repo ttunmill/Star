@@ -1,7 +1,8 @@
-// nav, footer 공통
-$(".btn").click(function() { 
-    $("#menu").addClass("open"); 
-}); 
-    $(".close").click(function() { 
-    $("#menu").removeClass("open"); 
+$("#hamburger").click(function() {
+	$("#sidenav").css("right", "0");
+$("body").addClass("dark")
+});
+$("#close-sidenav").click(function() {
+	$("#sidenav").css("right", "-200px");
+$("body").removeClass("dark");
 });

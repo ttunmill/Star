@@ -1,15 +1,16 @@
 /* contact 부분 */
 
 .box {
+    height: 100%;
     padding-top: 60px;
-    height: 2000px;
     background-color:darkkhaki;
     width: 100%;
 }
 
 #main_contact {
-    height: 200px;
-    margin-top: 70px;
+    height: 30%;
+    margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 #main_contact .bar {
@@ -51,69 +52,94 @@
 
 /* 이미지들 */
 #contact_wrap {
-    margin: 50px 0 0 0;
+    margin-top: 50px;
     padding: 50px 0 50px 0;
-    height: 80%;
+    height: 70%;
     overflow: hidden;
     background-color: grey;
 }
 
 .contact_img {
-    padding-top: 50px;
-}
-.contact_img:nth-of-type(even) {
-    float: left;
-    margin-left: 100px;
-    margin-top: 20px;
-    width: 50%;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
-.contact_img:nth-of-type(odd) {
-    float: right;
-    margin-right: 100px;
-    width: 33%;
-    padding-top: 100px;
-}
+
 
 /* 반응형 */
 @media screen and (max-width:767px){
-    #main_contact {
-        height: 200px;
-        margin-top: 70px;
-    }
     
-    #main_contact .bar {
-        color: grey;
-        font-size: 5em;
-        margin-left: 20px;
-        width: 100%;
+    .box {
+        overflow: hidden;
     }
 
-    #main_contact p {
+    #main_contact > .bar{
         margin-left: 20px;
+        font-size: 3.5em;
     }
-    
-    #contact_wrap {
-        overflow: hidden;
+
+    #main_contact > p {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .contact_img {
         float: left;
+        width: 100%;
+        text-align: center;
     }
-
-
 }
 
-@media screen and (max-width:768px) and (min-width:1023px) {
-    .contact_img:nth-of-type(odd) {
-        margin-right: 100px;
-    }    
+@media screen and (max-width:1023px) and (min-width:768px) {
+    .box {
+        overflow: hidden;
+    }
+    
+    .contact_img {
+        float: left;
+        width: 100%;
+    }
 
-
+    .contact_img:nth-child(1) {
+        margin-left: 10%;
+    }
+    
+    .contact_img:nth-child(2) {
+        margin-left: 40%;
+    }
+    
+    .contact_img:nth-child(3) {
+        margin-left: 10%;
+    }
+    
+    .contact_img:nth-child(4) {
+        margin-left: 70%;
+    } 
 }
 
 @media screen and (min-width:1024px) {
-    .contact_img > div{
-        /* display: none; */
+    .box {
+        overflow: hidden;
     }
+    
+    .contact_img {
+        float: left;
+        width: 100%;
+    }
+
+    .contact_img:nth-child(1) {
+        margin-left: 15%;
+    }
+    
+    .contact_img:nth-child(2) {
+        margin-left: 60%;
+    }
+    
+    .contact_img:nth-child(3) {
+        margin-left: 25%;
+    }
+    
+    .contact_img:nth-child(4) {
+        margin-left: 80%;
+    } 
 }
