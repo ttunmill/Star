@@ -3,8 +3,10 @@
 .box {
     height: 100%;
     padding-top: 60px;
-    background-color:darkkhaki;
+    background-color: white;
     width: 100%;
+    border-bottom: 1px solid black;
+    border-width: 30%;
 }
 
 #main_contact {
@@ -56,7 +58,7 @@
     padding: 50px 0 50px 0;
     height: 70%;
     overflow: hidden;
-    background-color: grey;
+    background-color: white;
 }
 
 .contact_img {
@@ -113,7 +115,7 @@
     }
     
     .contact_img:nth-child(4) {
-        margin-left: 70%;
+        margin-left: 50%;
     } 
 }
 
@@ -140,6 +142,6 @@
     }
     
     .contact_img:nth-child(4) {
-        margin-left: 80%;
+        margin-left: 70%;
     } 
 }

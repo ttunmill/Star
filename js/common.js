@@ -6,3 +6,8 @@ $("#close-sidenav").click(function() {
 	$("#sidenav").css("right", "-200px");
 $("body").removeClass("dark");
 });
+
+
+// $("#logo").click(function() {
+// 	$("").load("index.html");
+// });

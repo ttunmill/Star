@@ -11,12 +11,11 @@ img { border: 0; }
 ul { list-style: none; }
 
 
-
-
 /* 헤더 */
-
-
-
+body {
+    overflow-x:scroll;
+    overflow-x:hidden;
+}
 
 #main_header {
     position: fixed;
@@ -119,7 +118,7 @@ ul { list-style: none; }
     top: 0; right: -200px;
     background: #303942;
     position: fixed;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 #sidenav ul {
@@ -138,13 +137,14 @@ ul { list-style: none; }
 
 /* 푸터 */
 #main_footer {
+    position: relative;
+    left: 0;
     bottom: 0;
     width: 100%;
     background-color: #303942;
     /* #211A1D; */
     color: #CAD5CA;
     overflow: hidden;
-    /* position: relative; */
 }
 
 #email {

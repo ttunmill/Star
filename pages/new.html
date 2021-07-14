@@ -11,18 +11,19 @@
 </head>
 <body>
     <!-- 헤더&네브 -->
+    <a name="new">
     <header id="main_header">
         <div id="gnb_container">
             <div id="logo">
-                <a href="#"><img src="../img/main/logo.PNG" alt="logo" /></a>
+                <a href="../index.html#main"><img src="../img/main/logo.PNG" alt="logo" /></a>
             </div>
             <div>
                 <nav id="sidenav">
                     <span id="close-sidenav"><img src="https://img.icons8.com/ios-filled/50/ffffff/close-window.png" alt="닫기"/></span>
                     <ul id="menu_wrap">
-                        <a href="pages/new.html"><li>NEW</li></a>
-                        <a href="pages/recommend.html"><li>RECOMMEND</li></a>
-                        <a href="pages/contact.html"><li>CONTACT</li></a>
+                        <a href="../pages/new.html#new"><li>NEW</li></a>
+                        <a href="../pages/recommend.html#red"><li>RECOMMEND</li></a>
+                        <a href="../pages/contact.html#con"><li>CONTACT</li></a>
                     </ul>
                 </nav>
                 <div id="hamburger-wrapper">
@@ -33,10 +34,11 @@
     </header>
 
     <!-- 콘텐츠 -->
-    <div class="box">
-        <div class="black">
-            <div id="new_bg" class="box"></div>
-        </div>
+    <div class="dark">
+        <div class="box">
+            <div class="black">
+                <div id="new_bg" class="box"></div>
+            </div>
         <div id="new_phrase">
             <span class="bar">NEW</span>
         </div>
@@ -45,45 +47,43 @@
 
     <!-- 책 6권 -->
     <div class="box">
-    <article id="books_location" class="box">
-        <h1>신간도서</h1>
-        <div id="newbooks">
-            <a href="#" class="location">
-                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
-                <span class="book_title" id="title1">책제목1<span><br />
-                <span class="writer">글쓴이</span>
-            </a>
-            <a href="#" class="location">
-                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
-                <span class="book_title" id="title2">책제목2<span><br />
-                <span class="writer">글쓴이</span>
-            </a>
-            <a href="#" class="location">
-                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
-                <span class="book_title" id="title3">책제목3<span><br />
-                <span class="writer">글쓴이</span>
-            </a>
-        <div class="box">
-            <a href="#" class="location">
-                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
-                <span class="book_title" id="title4">책제목4<span><br />
-                <span class="writer">글쓴이</span>
-            </a>
-            <a href="#" class="location">
-                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
-                <span class="book_title" id="title5">책제목5<span><br />
-                <span class="writer">글쓴이</span>
-            </a>
-            <a href="#" class="location">
-                <span class="q" id="img_books"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
-                <span class="book_title" id="title6">책제목6<span><br />
-                <span class="writer">글쓴이</span>
-            </a>
+        <article id="books_location">
+            <h1>신간도서</h1>
+            <div id="newbooks" class="box">
+                <a href="#" class="location">
+                    <span class="q" id="img_books1"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                    <span class="book_title">책제목1<span><br />
+                    <span class="writer">글쓴이</span>
+                </a>
+                <a href="#" class="location">
+                    <span class="q" id="img_books2"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                    <span class="book_title">책제목2<span><br />
+                    <span class="writer">글쓴이</span>
+                </a>
+                <a href="#" class="location">
+                    <span class="q" id="img_books3"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                    <span class="book_title">책제목3<span><br />
+                    <span class="writer">글쓴이</span>
+                </a>
+                <a href="#" class="location">
+                    <span class="q" id="img_books4"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                    <span class="book_title">책제목4<span><br />
+                    <span class="writer">글쓴이</span>
+                </a>
+                <a href="#" class="location">
+                    <span class="q" id="img_books5"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                    <span class="book_title">책제목5<span><br />
+                    <span class="writer">글쓴이</span>
+                </a>
+                <a href="#" class="location">
+                    <span class="q" id="img_books6"><img src="https://via.placeholder.com/100x150" alt="책 이미지"></span><br />
+                    <span class="book_title">책제목6<span><br />
+                    <span class="writer">글쓴이</span>
+                </a>
+            </div>
+        </article>
         </div>
-        </div>
-    </article>
-    </div>
-    
+
     <!-- 푸터 -->
     <footer id="main_footer">
         <div id="email">이메일 : 0000000@naver.com<br />
@@ -100,11 +100,12 @@
     <!-- jQ -->
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/common.js"></script>
+    <script src="../js/new.js"></script>
     <script src="../js/books.js"></script>
-    <!-- <script src="../js/new.js"></script> -->
-    <script>
+    
+    <!-- <script>
         var book = new Book();
         book.getCurrentBook();
-    </script>
+    </script> -->
 </body>
 </html>
