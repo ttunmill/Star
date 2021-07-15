@@ -1,18 +1,18 @@
 /* contact 부분 */
 
-.box {
-    height: 100%;
-    padding-top: 60px;
+#main_contact {
+    overflow: hidden;
+    padding-top: 200px;
+    /* padding-bottom: 400px; */
     background-color: white;
     width: 100%;
-    border-bottom: 1px solid black;
-    border-width: 30%;
+    padding-bottom: 100px;
 }
 
-#main_contact {
-    height: 30%;
-    margin-top: 50px;
-    margin-bottom: 150px;
+
+#main_contact p {
+    margin-left: 50px;
+    font-size: 1.5em;
 }
 
 #main_contact .bar {
@@ -46,31 +46,43 @@
     animation-fill-mode: forwards; 
 }
 
-#main_contact p {
-    margin-left: 50px;
-    font-size: 1.5em;
+/* kakao map */
+#main_contact #kakao_map {
+    float: right;
+    margin-top: 50px;
 }
+
+#kakao_map h5 {
+    text-align: center;
+}
+
 
 
 /* 이미지들 */
 #contact_wrap {
-    margin-top: 50px;
-    padding: 50px 0 50px 0;
-    height: 70%;
+    padding: 250px 0 250px 0;
     overflow: hidden;
-    background-color: white;
+    background-color: grey;
 }
 
 .contact_img {
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 50px;
+
+    transition: transform 0.5s;
+    opacity: 1s;
 }
+
 
 
 
 /* 반응형 */
 @media screen and (max-width:767px){
-    
+    #kakao_map #map {
+        width: 100vw;
+        height: 200px;
+    }
+
     .box {
         overflow: hidden;
     }
@@ -83,6 +95,7 @@
     #main_contact > p {
         margin-left: 20px;
         margin-right: 20px;
+        font-size: 1.1em;
     }
 
     .contact_img {
@@ -93,6 +106,12 @@
 }
 
 @media screen and (max-width:1023px) and (min-width:768px) {
+    
+    #kakao_map {
+        margin-right: 100px;
+    }
+
+    
     .box {
         overflow: hidden;
     }
@@ -100,6 +119,14 @@
     .contact_img {
         float: left;
         width: 100%;
+    }
+
+    #main_contact > .bar{
+        font-size: 4em;
+    }
+
+    #main_contact > p {
+        font-size: 1.3em;
     }
 
     .contact_img:nth-child(1) {
@@ -120,6 +147,12 @@
 }
 
 @media screen and (min-width:1024px) {
+    #kakao_map {
+        margin-right: 200px;
+        text-align: center;
+    }
+    
+    
     .box {
         overflow: hidden;
     }

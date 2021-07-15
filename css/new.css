@@ -19,11 +19,12 @@
         background-color: #000;
 }
 
+
 /* 맨위 콘텐츠 */
 
 #new_phrase {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 10%;
     transform: (-50%, -50%);
     color: white;
@@ -62,7 +63,7 @@
 
 /* 콘텐츠(책들) */
 #books_location {
-    width: 100vw;
+    width: 100%;
     background-color: #e2dfda;
 }
 
@@ -74,12 +75,14 @@
 
 #newbooks {
     text-align: center;
+    width: 100%;
     margin-top: 80px;
+    padding-bottom: 80px;
+    background-color: #e2dfda;
 }
 
 .location {
     display: inline-block;
-    margin: -2.9px;
     text-align: center;
     padding: 40px;
     box-sizing: border-box;
@@ -88,12 +91,17 @@
 }
 
 .q img {
+    width: 150px;
+    height: 200px;
+
     transition: all 0.2s linear;
 }
 
 .q:hover img {
     transform: scale(1.2)
 }
+
+
 
 
 @media screen and (max-width:767px) {
@@ -104,35 +112,47 @@
 
     .location > .q {
         float: left;
+        padding-right: 20px;
     }
 
-    .location > .book_title, .writer {
-        padding-top: 20px;
+    .location .book_title {
+        position: relative;
     }
 
     #new_phrase {
         font-size: 0.5em;
+        top: 7%;
     }
+
+    .book_title {
+        margin-bottom: 20px;
+        position: absolute;
+    }
+
     
 }
 
-@media screen and (min-width:768px) and (max-width:1024px){
+@media screen and (min-width:768px) and (max-width:1023px){
     #books_location {
-        height: 100vh;
+        height: 100%;
     }
     
     .location {
         width: 30%;
     }
+
+    
 
     #new_phrase {
         font-size: 0.8em;
     }
+
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1024px) {
     .location {
         width: 30%;
         
     }
+
 }

@@ -1,10 +1,7 @@
 /* recommend */
-
-
-
 #red_bg {
-    background: url("../img/contant/recommend.jpg");
     position: relative;
+    background: url("../img/contant/recommend.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -22,20 +19,12 @@
         background-color: #000;
 }
 
-#red_phrase {
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    transform: (-50%, -50%);
-    color: white;
-    text-align: left;
-}
 
 /* 맨위 콘텐츠 */
 
 #red_phrase {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 10%;
     transform: (-50%, -50%);
     color: white;
@@ -70,11 +59,13 @@
     animation-fill-mode: forwards; 
 }
 
+
+
 /* 콘텐츠(책들) */
 #books_location {
-    /* height: 100vh; */
+    width: 100%;
+    padding-bottom: 100px;
     background-color: #e2dfda;
-    width: 100vw;
 }
 
 #books_location h1 {
@@ -90,7 +81,6 @@
 
 .location {
     display: inline-block;
-    margin: -2.9px;
     text-align: center;
     padding: 40px;
     box-sizing: border-box;
@@ -99,6 +89,8 @@
 }
 
 .q img {
+    padding-bottom: 20px;
+
     transition: all 0.2s linear;
 }
 
@@ -120,16 +112,17 @@
     .location > .book_title, .writer {
         padding-top: 20px;
     }
-    
+
     #red_phrase {
         font-size: 0.5em;
+        top: 7%;
     }
-
+    
 }
 
-@media screen and (min-width:768px) and (max-width:1024px){
+@media screen and (min-width:768px) and (max-width:1023px){
     #books_location {
-        height: 100vh;
+        height: 100%;
     }
     
     .location {
@@ -141,9 +134,10 @@
     }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1024px) {
     .location {
         width: 30%;
         
     }
+
 }

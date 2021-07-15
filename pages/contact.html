@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epic Books</title>
-    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../library/fontawesome-free-5.15.3-web/css/all.css">
 </head>
 <body>
     <!-- 헤더&네브 -->
-    <a name="con">
+    <a name="con"></a>
     <header id="main_header">
         <div id="gnb_container">
             <div id="logo">
@@ -34,12 +34,20 @@
     </header>
     
     <!-- 콘텐츠 -->
-    <div class="box">
+    <div class="contant_wrap">
         <div id="main_contact">
             <span class="bar">CONTACT</span>
             <p>Life-transforming ideas have always come to me through books</p>
+            <p>Books are the quietest and most constant of friends.</p>
+            <p>Live always in the best company when you read.</p>
+            <article id="kakao_map">
+                <div id="map">
+                    <img src="https://via.placeholder.com/400x300" alt="img" />
+                </div>
+                <h5>찾아 오시는 길</h5>
+            </article>
         </div>
-    </div>
+        
         <div id="contact_wrap">
             <div class="contact_img">
                 <div>
@@ -58,16 +66,12 @@
             </div>
             <div class="contact_img">
                 <div>
-                    <img src="https://via.placeholder.com/300x300" alt="img">
+                    <img src="https://via.placeholder.com/300x300" class="up-on-scroll" alt="img">
                 </div>
             </div>
-            <!-- <div class="contact_img">
-                <div>
-                    <img src="https://via.placeholder.com/150x150" alt="img">
-                </div>
-            </div> -->
         </div>
     </div>
+    
 
     <!-- 푸터 -->
     <footer id="main_footer">
@@ -75,9 +79,15 @@
             전화번호 : 000 - 0000 - 0000
         </div>
         <div id="footer_img">
-            <a href="#"><img src="https://img.icons8.com/office/48/000000/discord-logo.png" alt="discord"></a>
-            <a href="#"><img src="https://img.icons8.com/dusk/48/000000/kakaotalk.png" alt="kakao"></a>
-            <a href="#"><img src="https://img.icons8.com/office/42/000000/google-logo.png" alt="google"></a>
+            <span>
+                <a href="#"><img src="https://img.icons8.com/office/48/000000/discord-logo.png" alt="discord"></a>
+            </span>
+            <span>
+                <a href="#"><img src="https://img.icons8.com/dusk/48/000000/kakaotalk.png" alt="kakao"></a>
+            </span>
+            <span>
+                <a href="#"><img src="https://img.icons8.com/office/42/000000/google-logo.png" alt="google"></a>
+            </span>
         </div>
     </footer>
 
@@ -87,5 +97,7 @@
     <script src="../js/jquery-3.6.0.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/contact.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f3deb6c16cc0136d765cf81740badc6c"></script>
+    <script src="../js/map.js"></script>
 </body>
 </html>
