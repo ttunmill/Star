@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="library/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap');
+</style>
 </head>
 <body>
     <!-- 헤더&네브 -->
@@ -21,9 +29,9 @@
                 <nav id="sidenav">
                     <span id="close-sidenav"><img src="https://img.icons8.com/ios-filled/50/ffffff/close-window.png" alt="닫기"/></span>
                     <ul id="menu_wrap">
-                        <a href="pages/new.html"><li>NEW</li></a>
-                        <a href="pages/recommend.html"><li>RECOMMEND</li></a>
-                        <a href="pages/contact.html"><li>CONTACT</li></a>
+                        <li><a href="pages/new.html">NEW</a></li>
+                        <li><a href="pages/recommend.html">RECOMMEND</a></li>
+                        <li><a href="pages/contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
                 <div id="hamburger-wrapper">
@@ -35,12 +43,9 @@
     
     <!-- 콘텐츠 -->
     <div id="contant">
-        <div class="bg_img">
-            <ul>
-                <li class="main_img"><img src="/img/main/bgimg1.webp" alt="이미지"></li>
-                <li class="main_img" style="display: none;"><img src="/img/main/bgimg2.webp" alt="이미지"></li>
-                <li class="main_img" style="display: none;"><img src="/img/main/bgimg3.jpg" alt="이미지"></li>
-            </ul>
+        <div class="bg_video">
+            <img id="main_image" src="/img/main/forest.jpg" alt="이미지">
+            <video id="main_video" loop muted autoplay src="/img/main/video.mp4">비디오를 찾을 수 없습니다.</video>
         </div>
         <div class="main_phrase">
             <span class="bar">Welcome!</span>

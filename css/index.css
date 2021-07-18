@@ -33,20 +33,28 @@ ul > li > img {
     height: 50px;
 } */
 
-.bg_img > ul > li > img{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+.bg_video { 
+    
 }
 
-.bg_img > ul > li {
-    width: 100%;
-    position: absolute;
-    transition: all 1s;
+.bg_video #main_video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    filter: brightness(50%)
 }
 
-
+#main_image {
+    filter: brightness(50%);
+    width: 100vw;
+    height: 100vh;
+}
 
 
 
@@ -89,6 +97,14 @@ ul > li > img {
 /* 반응형 */
 
 @media screen and (max-width:767px) {
+    #main_image {
+        display: block;
+    }
+
+    #main_video {
+        display: none;
+    }
+    
     .main_phrase {
         font-size: 0.5em;
         left: 100px;
@@ -97,6 +113,14 @@ ul > li > img {
 }
 
 @media screen and (max-width:1023px) and (min-width:768px) {
+    #main_image {
+        display: none;
+    }
+
+    #main_video {
+        display: block;
+    }
+    
     .main_phrase {
         font-size: 0.8em;
         left: 230px;
@@ -104,6 +128,12 @@ ul > li > img {
 }
 
 @media screen and (min-width:1024px) {
-    
+    #main_image {
+        display: none;
+    }
+
+    #main_video {
+        display: block;
+    }
 }
 

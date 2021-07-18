@@ -17,6 +17,7 @@ body {
     margin:0;
     padding:0;
     height:100%;
+
 }
 
 .contant_wrap {
@@ -64,16 +65,22 @@ body {
 }
 
 
-#main_header li {
+#main_header li a {
+    display: block;
     float: left;
-    padding: 23px;
-    box-sizing: border-box;
-    width: 200px;
+    padding: 19px;
+    width: 150px;
     text-align: center;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 1.3em;
 }
 
 
-#main_header li:hover {
+
+
+
+
+#main_header a:hover {
     background-color: #321C52;
     cursor: pointer;
 }
@@ -101,7 +108,7 @@ body {
 
 /* 네비게이션 */
 
-@media screen and (max-width:900px) {    
+@media screen and (max-width:860px) {    
 
 #hamburger-wrapper {
     display: block;

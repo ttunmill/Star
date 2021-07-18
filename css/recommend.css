@@ -1,4 +1,4 @@
-/* recommend */
+/* red */
 #red_bg {
     position: relative;
     background: url("../img/contant/recommend.jpg");
@@ -32,7 +32,7 @@
 }
 
 #red_phrase span {
-    font-size: 5em;
+    font-size: 10em;
 }
 
 @keyframes bar {
@@ -42,18 +42,19 @@
 
 .bar {
     position: relative;
+    font-family: 'Zen Tokyo Zoo', cursive;
 }
 
 .bar::after {
     content: ' ';
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 5px;
     background: white;
     animation-name: bar;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards; 
@@ -64,32 +65,40 @@
 /* 콘텐츠(책들) */
 #books_location {
     width: 100%;
-    padding-bottom: 100px;
     background-color: #e2dfda;
 }
 
 #books_location h1 {
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
     padding-top: 70px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.location .book_title,.writer {
+    font-size: 1.3em;
+    font-family: 'Nanum Gothic Coding', monospace;
 }
 
 #redbooks {
     text-align: center;
+    width: 100%;
     margin-top: 80px;
+    padding-bottom: 80px;
+    background-color: #e2dfda;
 }
 
 .location {
     display: inline-block;
     text-align: center;
-    padding: 40px;
-    box-sizing: border-box;
+    padding: 20px;
     color: black;
-    /* border: 1px black solid; */
+    border: 20px;
 }
 
 .q img {
-    padding-bottom: 20px;
+    width: 150px;
+    height: 200px;
 
     transition: all 0.2s linear;
 }
@@ -101,22 +110,29 @@
 
 @media screen and (max-width:767px) {
     .location {
-        width: 100%;
+        width: 90%;
         overflow: hidden;
     }
 
     .location > .q {
         float: left;
+        padding-right: 20px;
     }
 
-    .location > .book_title, .writer {
-        padding-top: 20px;
+    .location .book_title {
+        position: relative;
     }
 
     #red_phrase {
-        font-size: 0.5em;
+        font-size: 0.3em;
         top: 7%;
     }
+
+    .book_title {
+        margin-bottom: 20px;
+        position: absolute;
+    }
+
     
 }
 
@@ -128,10 +144,12 @@
     .location {
         width: 30%;
     }
+    
 
     #red_phrase {
         font-size: 0.8em;
     }
+
 }
 
 @media screen and (min-width:1024px) {

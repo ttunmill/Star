@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../library/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap');
+    </style>
 </head>
 <body>
     <!-- 헤더&네브 -->
@@ -21,9 +29,9 @@
                 <nav id="sidenav">
                     <span id="close-sidenav"><img src="https://img.icons8.com/ios-filled/50/ffffff/close-window.png" alt="닫기"/></span>
                     <ul id="menu_wrap">
-                        <a href="../pages/new.html#new"><li>NEW</li></a>
-                        <a href="../pages/recommend.html#red"><li>RECOMMEND</li></a>
-                        <a href="../pages/contact.html#con"><li>CONTACT</li></a>
+                        <li><a href="../pages/new.html#new">NEW</a></li>
+                        <li><a href="../pages/recommend.html#red">RECOMMEND</a></li>
+                        <li><a href="../pages/contact.html#con">CONTACT</a></li>
                     </ul>
                 </nav>
                 <div id="hamburger-wrapper">
@@ -40,33 +48,46 @@
             <p>Life-transforming ideas have always come to me through books</p>
             <p>Books are the quietest and most constant of friends.</p>
             <p>Live always in the best company when you read.</p>
-            <article id="kakao_map">
-                <div id="map">
-                    <img src="https://via.placeholder.com/400x300" alt="img" />
+            <div id="text_contact">
+                <div>
+                    <span class="font">Design : </span><span>Hyun Woo</span>
+                </div><br />
+                <div>
+                    <span class="font">Creator : </span><span>Hyun Woo</span>
                 </div>
-                <h5>찾아 오시는 길</h5>
+            </div>
+            <article id="library_map">
+                <div id="map">
+                    <img src="../img/contant/library.PNG" alt="img" />
+                </div>
+                <h5>도서관 위치</h5>
             </article>
         </div>
         
         <div id="contact_wrap">
             <div class="contact_img">
                 <div>
-                    <img src="https://via.placeholder.com/130x130" alt="img">
+                    <img src="../img/contant/contact/book-1149959_1920.jpg" alt="img">
                 </div>
             </div>
             <div class="contact_img">
                 <div>
-                    <img src="https://via.placeholder.com/300x200" alt="img">
+                    <img src="../img/contant/contact/donut-3723751_1920.jpg" alt="img">
                 </div>
             </div>
             <div class="contact_img">
                 <div>
-                    <img src="https://via.placeholder.com/200x220" alt="img">
+                    <img src="../img/contant/contact/read-4960517_1920.jpg" alt="img">
                 </div>
             </div>
             <div class="contact_img">
                 <div>
-                    <img src="https://via.placeholder.com/300x300" class="up-on-scroll" alt="img">
+                    <img src="../img/contant/contact/woman-6318447_1920.jpg" class="up-on-scroll" alt="img">
+                </div>
+            </div>
+            <div class="contact_img">
+                <div>
+                    <img src="../img/contant/contact/book-1659717_1920.jpg" class="up-on-scroll" alt="img">
                 </div>
             </div>
         </div>
@@ -97,7 +118,6 @@
     <script src="../js/jquery-3.6.0.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/contact.js"></script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f3deb6c16cc0136d765cf81740badc6c"></script>
-    <script src="../js/map.js"></script>
+
 </body>
 </html>
