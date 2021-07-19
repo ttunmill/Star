@@ -2,7 +2,7 @@
 
 #main_contact {
     overflow: hidden;
-    padding-top: 200px;
+    padding-top: 150px;
     /* padding-bottom: 400px; */
     background-color: #D0D0D0;
     width: 100%;
@@ -34,11 +34,27 @@
 
 
 
+.bar::after {
+    content: ' ';
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: grey;
+    animation-name: bar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+/* 글/맵 */
 #text_contact {
+    position: relative;
     float: left;
     margin-top: 120px;
-    margin-left: 120px;
-    position: absolute;
+    padding-left: 120px;
 }
 
 #text_contact div span, p {
@@ -50,38 +66,24 @@
     font-size: 18px;
 }
 
-
-
-
-
-
-.bar::after {
-    content: ' ';
-    position: absolute;
-    top: 90%;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: grey;
-    animation-name: bar;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; 
-}
-
-/* 맵 */
 #library_map {
-    overflow: hidden;
+    position: relative;
     float: right;
     margin-top: 50px;
 }
 
+#library_map #map {
+    float: right;
+}
+
 
 #library_map #map img {
+    float: right;
     height: 300px;
     width: 500px;
 }
+
+
 
 
 
@@ -135,15 +137,16 @@
     #text_contact {
         float: left;
         margin-top: 120px;
-        margin-left: 120px;
+        margin-left: 20px;
+        padding-left: 0px;
         width: 100%;
     }
 
-
-    #library_map #map {
-        width: 400%;
-        height: 200px;
+    #library_map #map img  {
+        width: 100vw;
+        height: 250px;
     }
+
 
     .box {
         overflow: hidden;
@@ -162,20 +165,22 @@
 
     .contact_img {
         float: left;
-        text-align: center;
         width: 100%;
+        text-align: center;
     }
 }
 
 @media screen and (max-width:1023px) and (min-width:768px) {
-    
-    #library_map {
-        margin-top: 50px;
-        margin-right: 100px;
-        height: 200px;
-        width: 300px;
+    #library_map #map {
+        float: right;
     }
 
+    #library_map #map img {
+        float: right;
+        height: 200px;
+        width: 300px;
+        margin-right: 15%;
+    }
     
     .box {
         overflow: hidden;

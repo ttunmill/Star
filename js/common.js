@@ -7,7 +7,3 @@ $("#close-sidenav").click(function() {
 $("body").removeClass("dark");
 });
 
-
-// $("#logo").click(function() {
-// 	$("").load("index.html");
-// });
