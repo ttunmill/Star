@@ -81,6 +81,10 @@ body{ -ms-overflow-style: none; }
     font-family: 'Encode Sans SC', sans-serif;
 }
 
+.bar:nth-of-type(2) {
+    font-size: 3em;   
+}
+
 .bar::after {
     content: ' ';
     position: absolute;
@@ -157,7 +161,7 @@ body{ -ms-overflow-style: none; }
     }
 
     .design_box {
-        top: 84%;
+        top: 83%;
     }
 }
 
