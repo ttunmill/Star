@@ -16,7 +16,7 @@
 }
 
 #main_contact .bar {
-    color: grey;
+    color: gray;
     font-size: 5em;
     margin-left: 50px;
     width: 100%;
@@ -100,7 +100,7 @@
     margin-bottom: 50px;
 
     transition: transform 0.5s;
-    opacity: 1s;
+    opacity: 1;
     
 }
 

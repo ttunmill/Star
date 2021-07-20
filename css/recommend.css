@@ -2,7 +2,7 @@
 #red_bg {
     position: relative;
     background: url("../img/contant/recommend.jpg");
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 400px;
@@ -26,7 +26,6 @@
     position: absolute;
     top: 10%;
     left: 10%;
-    transform: (-50%, -50%);
     color: white;
     text-align: left;
 }

@@ -1,6 +1,5 @@
 /* 백그라운드 */
 body{ -ms-overflow-style: none; } 
-::-webkit-scrollbar { display: none; }
 
 .bg_black { 
     position: absolute;
